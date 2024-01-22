@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<math.h>
 
+int fibonacci(int b);
+
 int main(){
 
     int a;
@@ -43,6 +45,22 @@ int main(){
     // GCD of two numbers (DOUBT)
 
     // Generate Fibonacci series (DOUBT)
-    
+    int b;
+    printf("Enter the number of terms you want in Fibonacci series: ");
+    scanf("%d",&b);
+    for(int i=0;i<b;i++){
+        printf("%d ",fibonacci(i));
+    }
+
     return 0;
+}
+
+int fibonacci(int b){
+    if(b==0){
+        return 0;
+    } if(b==1){
+        return 1;
+    }
+    int fib = fibonacci(b-1) + fibonacci(b-2);
+    return fib;
 }
