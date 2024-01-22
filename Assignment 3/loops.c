@@ -21,7 +21,7 @@ int main(){
             printf("%d is not a prime number\n",a);
             break;
         } 
-    } if(a%i != 0){
+    } if(i==a){
         printf("%d is a prime number",a);
     }
 
