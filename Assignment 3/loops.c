@@ -28,7 +28,7 @@ int main(){
     }
 
     // X raised to power n (DOUBT)
-
+    
     // Armstrong numbers between 1 to 500 (DOUBT)
 
     // Range of set of entered nos. by finding smallest and largest.
