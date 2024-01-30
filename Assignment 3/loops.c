@@ -31,7 +31,7 @@ int main(){
     
     // Armstrong numbers between 1 to 500 (DOUBT)
 
-    // Range of set of entered nos. by finding smallest and largest.
+    // Range of set of entered nos. by finding smallest and largest (DOUBT)
 
     // Multiplication table
     int mul;

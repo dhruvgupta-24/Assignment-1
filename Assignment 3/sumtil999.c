@@ -10,7 +10,7 @@ int main(){
         scanf("%d",&a);
         sum=sum+a;
     } while(a!=-999);
-    printf("Sum of numbers enetred before -999 = %d",sum+999);
+    printf("Sum of numbers entered before -999 = %d",sum+999);
 
     return 0;
 }
