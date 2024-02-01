@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 
-int fibonacci(int b);
+int fibonacci(int fib);
 
 int main(){
 
@@ -29,7 +29,26 @@ int main(){
 
     // X raised to power n (DOUBT)
     
-    // Armstrong numbers between 1 to 500 (DOUBT)
+    // Check if the input integer is an Armstrong number or not?
+    int b,c,d,e,f,g,h,j;
+    printf("Enter a number: ");
+    scanf("%d",&b);
+    printf("Specify the number of digits in your number: ");
+    scanf("%d",&h);
+
+
+    c=b%10;
+    d=b%100/10;
+    e=b%1000/100;
+    f=b%10000/1000;
+    g=b%100000/10000;
+    j=b%1000000/100000;
+    
+    if (pow(c,h)+pow(d,h)+pow(e,h)+pow(f,h)+pow(g,h)+pow(j,h)==b){
+        printf("%d is a Armstrong number\n",b);
+    } else {
+        printf("%d is not an Armstrong number\n",b);
+    }
 
     // Range of set of entered nos. by finding smallest and largest (DOUBT)
 
@@ -45,22 +64,22 @@ int main(){
     // GCD of two numbers (DOUBT)
 
     // Generate Fibonacci series (DOUBT)
-    int b;
+    int fib;
     printf("Enter the number of terms you want in Fibonacci series: ");
-    scanf("%d",&b);
-    for(int i=0;i<b;i++){
-        printf("%d ",fibonacci(i));
+    scanf("%d",&fib);
+    for(int i=0;i<fib;i++){
+        printf("%d\n",fibonacci(i));
     }
 
     return 0;
 }
 
-int fibonacci(int b){
-    if(b==0){
+int fibonacci(int fib){
+    if(fib==0){
         return 0;
-    } if(b==1){
+    } if(fib==1){
         return 1;
     }
-    int fib = fibonacci(b-1) + fibonacci(b-2);
-    return fib;
+    int fibo = fibonacci(fib-1) + fibonacci(fib-2);
+    return fibo;
 }
